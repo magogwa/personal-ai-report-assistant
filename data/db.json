@@ -1,0 +1,192 @@
+{
+  "reports": [
+    {
+      "id": "b18e4d4f-fd40-4351-9cd0-5c28f6ab43d2",
+      "title": "Untitled Report",
+      "reportType": "Daily Report",
+      "templateId": "32af62e1-9038-4284-8897-d81f9788fe38",
+      "projectName": "",
+      "reportingPeriod": "",
+      "department": "",
+      "responsibleOfficer": "",
+      "rawNotes": "data collection\nreport presentation",
+      "aiInstructions": "copy as template says",
+      "supportingDocs": [],
+      "status": "completed",
+      "content": "Title: Untitled Report\n\nData Collection  \nGathered relevant information for the ongoing project through data collection activities.\n\nReport Presentation  \nPrepared and presented the findings to stakeholders, ensuring clarity and engagement.",
+      "createdAt": "2026-11-13T10:20:50.941Z",
+      "updatedAt": "2026-11-13T14:43:05.595Z"
+    },
+    {
+      "id": "8ea2a3d8-8dfd-4a92-a50c-786e3fa45f35",
+      "title": "Untitled Report",
+      "reportType": "Daily Report",
+      "templateId": "32af62e1-9038-4284-8897-d81f9788fe38",
+      "projectName": "",
+      "reportingPeriod": "",
+      "department": "",
+      "responsibleOfficer": "",
+      "rawNotes": "data analysis\ndata collection\nreport presentation",
+      "aiInstructions": "",
+      "supportingDocs": [],
+      "status": "completed",
+      "content": "Untitled Report\n\nData Analysis  \nConducted analysis of collected data to identify trends and insights relevant to the project objectives.\n\nData Collection  \nEngaged in data collection activities to gather necessary information for ongoing analysis and reporting.\n\nReport Presentation  \nPrepared and presented findings in a report format for review by stakeholders, ensuring clarity and coherence in the presentation of data.",
+      "createdAt": "2026-11-13T12:19:01.859Z",
+      "updatedAt": "2026-11-13T12:45:21.362Z"
+    },
+    {
+      "id": "5b0949b1-d38c-4932-a886-00c01afbd4cf",
+      "title": "Untitled Report",
+      "reportType": "Weekly Report",
+      "templateId": null,
+      "projectName": "",
+      "reportingPeriod": "",
+      "department": "",
+      "responsibleOfficer": "",
+      "rawNotes": "\n\nSource daily reports:\ndata collection\nreport presentation\n---\nTitle: Untitled Report\n\nData Analysis  \nConducted analysis of collected data to identify trends and insights relevant to the project objectives.\n\nData Collection  \nEngaged in the collection of necessary data from various sources to support ongoing analysis and reporting efforts.\n\nReport Presentation  \nPrepared and organized the presentation of findings to ensure clarity and effective communication of results to stakeholders.",
+      "aiInstructions": "",
+      "supportingDocs": [],
+      "status": "completed",
+      "content": "**Title: Untitled Report**\n\n**Data Analysis**  \nConducted a thorough and systematic analysis of the collected data, employing a diverse array of statistical methods and analytical tools, such as regression analysis, cluster analysis, and time-series forecasting, to uncover significant trends and insights that are directly aligned with the project objectives. This comprehensive analysis involved identifying patterns over time, examining correlations between different data sets, and detecting any anomalies that may warrant further investigation. Each finding was meticulously documented, providing a detailed account of the implications for the project, which will serve to inform strategic decision-making processes. Additionally, the analysis included a comparative review of historical data to contextualize current findings and enhance the overall understanding of the project's landscape.\n\n**Data Collection**  \nEngaged in a comprehensive and methodical approach to the collection of essential data from a wide range of diverse sources, including structured surveys, in-depth interviews, and existing databases. This multi-faceted data collection strategy was designed to ensure that all relevant information was captured, thereby supporting ongoing analysis and reporting efforts. Special attention was given to the accuracy and reliability of the data, with rigorous validation processes implemented, such as cross-referencing with secondary sources and employing data cleaning techniques, to enhance the integrity of the findings. The collection process was also designed to be inclusive, ensuring that a broad spectrum of perspectives was represented, which is critical for a holistic understanding of the project context.\n\n**Report Presentation**  \nPrepared and meticulously organized the presentation of findings, utilizing a variety of visual aids such as charts, graphs, and infographics to enhance clarity and facilitate the effective communication of results to stakeholders. The presentation was structured to highlight key insights and actionable recommendations, ensuring that complex information was conveyed in an accessible manner. Each section of the presentation was crafted to build upon the previous one, guiding stakeholders through the narrative of the data. Feedback from stakeholders was actively sought during the presentation to foster a collaborative environment and to address any questions or concerns that arose, ensuring that all voices were heard and considered in the final reporting. Follow-up sessions were also scheduled to delve deeper into specific areas of interest, further enriching the dialogue surrounding the findings.",
+      "createdAt": "2026-11-13T12:22:58.161Z",
+      "updatedAt": "2026-11-13T12:29:24.073Z"
+    },
+    {
+      "id": "0ad33cba-be1c-4823-992f-defd89c8fa54",
+      "title": "WEEK 1",
+      "reportType": "General Report",
+      "templateId": null,
+      "projectName": "",
+      "reportingPeriod": "",
+      "department": "",
+      "responsibleOfficer": "",
+      "rawNotes": "Conducted a review of current M&E frameworks and practices within the organization.  \nParticipated in data collection activities using various tools and methodologies.  \nEngaged in discussions with stakeholders to understand their M&E needs and challenges.  \nAssisted in the development of SMART indicators for ongoing projects.  \nPrepared and submitted a daily field report summarizing activities and findings.  ",
+      "aiInstructions": "",
+      "supportingDocs": [],
+      "status": "completed",
+      "content": "**WEEK 1 REPORT SUMMARY**\n\nThis report outlines the activities from the first week of field practice in Monitoring and Evaluation (M&E). Key activities included:\n\n1. **Review of M&E Frameworks**: Analyzed current M&E practices to identify improvement areas, such as data collection gaps and reporting inconsistencies.\n\n2. **Data Collection**: Engaged in various data collection methods (surveys, interviews, focus groups) to gather comprehensive information for projects, ensuring ethical standards were met.\n\n3. **Stakeholder Engagement**: Held discussions with stakeholders to understand their M&E needs and challenges, integrating their insights into future planning.\n\n4. **Development of SMART Indicators**: Collaborated with project teams to create Specific, Measurable, Achievable, Relevant, and Time-bound indicators for tracking progress and accountability.\n\n5. **Daily Field Reporting**: Prepared daily reports summarizing activities, findings, and reflections, supporting transparency and continuous improvement in M&E strategies.",
+      "createdAt": "2026-11-13T15:02:06.613Z",
+      "updatedAt": "2026-11-13T15:07:16.519Z"
+    },
+    {
+      "id": "5cbf1dd8-6b05-4eb4-926e-693a145731fa",
+      "title": "WEEK2 DAY2",
+      "reportType": "Daily Report",
+      "templateId": "6207c64c-e831-4881-b9c1-980cb7fda6f1",
+      "projectName": "",
+      "reportingPeriod": "",
+      "department": "",
+      "responsibleOfficer": "",
+      "rawNotes": "Conducted orientation sessions for new students on M&E principles  \nParticipated in data collection through surveys and interviews  \nAssisted in the development of M&E frameworks for ongoing projects  \nEngaged in team meetings to discuss project progress and challenges  \nPrepared daily field reports documenting activities and findings  ",
+      "aiInstructions": "",
+      "supportingDocs": [],
+      "status": "completed",
+      "content": "WEEK 2 DAY 2\n\n1. Orientation Sessions: Conducted orientation sessions for new students on Monitoring and Evaluation (M&E) principles, providing foundational knowledge essential for their studies.\n\n2. Data Collection Participation: Participated in data collection efforts through surveys and interviews, contributing to the gathering of relevant information for ongoing projects.\n\n3. M&E Framework Development: Assisted in the development of M&E frameworks for ongoing projects, helping to establish structured approaches for monitoring and evaluation.\n\n4. Team Meetings Engagement: Engaged in team meetings to discuss project progress and challenges, facilitating collaboration and problem-solving among team members.\n\n5. Daily Field Reporting: Prepared daily field reports documenting activities and findings, ensuring accurate records of progress and insights gained during the day.",
+      "createdAt": "2026-11-13T15:15:41.824Z",
+      "updatedAt": "2026-11-13T15:18:03.556Z"
+    },
+    {
+      "id": "bcaa74ba-0367-4bf4-9072-c83b0a7483ba",
+      "title": "Untitled Report",
+      "reportType": "Weekly Report",
+      "templateId": null,
+      "projectName": "",
+      "reportingPeriod": "",
+      "department": "",
+      "responsibleOfficer": "",
+      "rawNotes": "",
+      "aiInstructions": "",
+      "supportingDocs": [],
+      "status": "completed",
+      "content": "**Weekly Report**\n\n**Title:** Untitled Report\n\n**Introduction:**  \nThis report summarizes the activities and findings from the past week as part of my field practice in the Department of Health Systems Management. The focus has been on monitoring and evaluation practices, data management, and collaboration with various stakeholders.\n\n**Activities Summary:**\n\n1. I conducted a review of existing monitoring and evaluation frameworks in place at the host organization to assess their effectiveness and identify areas for improvement.\n\n2. I participated in a training session on data management techniques, which enhanced my understanding of data collection, analysis, and reporting processes.\n\n3. I collaborated with team members to develop a performance monitoring plan aimed at improving health service delivery outcomes.\n\n4. I engaged in discussions with stakeholders to gather feedback on current evaluation practices and to explore opportunities for enhancing collaboration.\n\n5. I assisted in the preparation of a report summarizing the findings from the recent health program evaluations, which will be presented to the management team.\n\n6. I observed the implementation of data collection methods in the field, which provided practical insights into the challenges faced during the monitoring process.\n\n7. I attended a workshop on networking and collaboration strategies, which emphasized the importance of building relationships with various health organizations.\n\n8. I documented my experiences and reflections on the practical application of monitoring and evaluation theories learned in class.\n\nThis report encapsulates my key activities and learnings over the past week, contributing to my professional development in health systems management.",
+      "createdAt": "2026-11-13T15:39:00.615Z",
+      "updatedAt": "2026-11-13T15:43:18.230Z"
+    }
+  ],
+  "templates": [
+    {
+      "id": "32af62e1-9038-4284-8897-d81f9788fe38",
+      "name": "aloyce",
+      "category": "General",
+      "reportType": "Daily Report",
+      "fileName": "SUMMARY OF THE RESEARCH PROPOSAL.docx",
+      "filePath": "D:\\APP BUILDINGS\\FIELD REPORT\\ujuzi-app\\data\\uploads\\32af62e1-9038-4284-8897-d81f9788fe38-SUMMARY OF THE RESEARCH PROPOSAL.docx",
+      "createdAt": "2026-11-13T10:18:10.752Z"
+    },
+    {
+      "id": "6207c64c-e831-4881-b9c1-980cb7fda6f1",
+      "name": "mimi",
+      "category": "General",
+      "reportType": "Daily Report",
+      "fileName": "WEEK_1.docx",
+      "filePath": "D:\\APP BUILDINGS\\FIELD REPORT\\ujuzi-app\\data\\uploads\\6207c64c-e831-4881-b9c1-980cb7fda6f1-WEEK_1.docx",
+      "extractedText": "WEEK 1 REPORT SUMMARY\nThis report outlines the activities from the first week of field practice in Monitoring and Evaluation (M&E). Key activities included:\n1. Review of M&E Frameworks: Analyzed current M&E practices to identify improvement areas, such as data collection gaps and reporting inconsistencies.\n2. Data Collection: Engaged in various data collection methods (surveys, interviews, focus groups) to gather comprehensive information for projects, ensuring ethical standards were met.\n3. Stakeholder Engagement: Held discussions with stakeholders to understand their M&E needs and challenges, integrating their insights into future planning.\n4. Development of SMART Indicators: Collaborated with project teams to create Specific, Measurable, Achievable, Relevant, and Timebound indicators for tracking progress and accountability.\n5. Daily Field Reporting: Prepared daily reports summarizing activities, findings, and reflections, supporting transparency and continuous improvement in M&E strategies.",
+      "createdAt": "2026-11-13T15:14:04.761Z"
+    }
+  ],
+  "generationHistory": [
+    {
+      "reportId": "8ea2a3d8-8dfd-4a92-a50c-786e3fa45f35",
+      "createdAt": "2026-11-13T12:19:19.444Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "5b0949b1-d38c-4932-a886-00c01afbd4cf",
+      "createdAt": "2026-11-13T12:23:08.227Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "8ea2a3d8-8dfd-4a92-a50c-786e3fa45f35",
+      "createdAt": "2026-11-13T12:37:31.629Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "8ea2a3d8-8dfd-4a92-a50c-786e3fa45f35",
+      "createdAt": "2026-11-13T12:42:00.727Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "8ea2a3d8-8dfd-4a92-a50c-786e3fa45f35",
+      "createdAt": "2026-11-13T12:42:44.615Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "8ea2a3d8-8dfd-4a92-a50c-786e3fa45f35",
+      "createdAt": "2026-11-13T12:43:11.586Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "8ea2a3d8-8dfd-4a92-a50c-786e3fa45f35",
+      "createdAt": "2026-11-13T12:43:15.879Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "b18e4d4f-fd40-4351-9cd0-5c28f6ab43d2",
+      "createdAt": "2026-11-13T14:42:36.807Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "0ad33cba-be1c-4823-992f-defd89c8fa54",
+      "createdAt": "2026-11-13T15:02:19.886Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "0ad33cba-be1c-4823-992f-defd89c8fa54",
+      "createdAt": "2026-11-13T15:03:25.473Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "5cbf1dd8-6b05-4eb4-926e-693a145731fa",
+      "createdAt": "2026-11-13T15:15:57.089Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "bcaa74ba-0367-4bf4-9072-c83b0a7483ba",
+      "createdAt": "2026-11-13T15:39:23.501Z",
+      "model": "openai/gpt-4o-mini"
+    }
+  ],
+  "settings": {
+    "guideline": "# Page 1\n\nMZUMBE UNIVERSITY DEPARTMENT OF HEALTH SYSTEMS MANAGEMENT BACHELOR OF\nHEALTH SYSTEMS IN MONITORING AND EVALUATION FIELD PRACTICE GUIDELINE FOR\nUNDERGRADUATE STUDENTS\n\n------------------------------------------------------------------------\n\n# Page 3\n\nField Practice Guideline for Undergraduate Students iii CONTENTS A:\nPreamble..................................................................................................................................................................................1\nB: Aims of the Field Attachment for BHSME-\nStudent.............................................................2 C:\nDuration of Field\nAttachment........................................................................................................................3\nD: Specific Areas where Students can be Attached for Field\nPractices...............3 E: Competencies that Students should Develop\nand Demonstrate..........................3 F: Technical Competencies\nRelated to Monitoring and Evaluation...........................4 1.\\\nM&E Activities Development and Organization\nSettings...........................................4 2. Data Management\nand Data\nUse.......................................................................................................4\n3. M&E Research: Evaluation\nTechniques........................................................................................5\n4. M&E Research: Performance\nMonitoring....................................................................................6\n5. Networking and\nCollaboration...............................................................................................................6\nG: Roles of the Host Organization\n(Employer)...................................................................................7\nH: Roles of Student (Prospective\nEmployee).......................................................................................7\nI:\\\nRoles of the Department (Mzumbe\nUniversity)........................................................................8\n\n------------------------------------------------------------------------\n\n# Page 4\n\nDepartment of Health Systems Management iv\n\n------------------------------------------------------------------------\n\n# Page 5\n\nField Practice Guideline for Undergraduate Students 1 A: Preamble\n\nMzumbe University, a prominent public institution in Tanzania, is\ndedicated to facilitating the acquisition, development, preservation,\nand dissemination of knowledge and skills through education, research,\nand professional services. Mzumbe University was established by the\nMzumbe University Charter, 2007 under Section 25 of the Universities\nAct. No. 7 of 2005 which repealed the Mzumbe University Act. No 9 of\n2001. As a Training Institute, the University boasts over 50 years of\nexperience in training in the administration of justice, business\nmanagement, public administration, accountancy, finance, political\nscience, and good governance. The School of Public Administration and\nManagement (SOPAM) is one of the three largest academic units within the\nUniversity. The School has its academic departments, namely the\nDepartment of Public Service and Human Resources Management, the\nDepartment of Local Governance and Management Studies, and the\nDepartment of Health Systems Management.\n\nThe Department of Health Systems Management hosts several academic\nprograms that include Bachelor of Health Systems Management, Bachelor of\nHealth Systems in Monitoring and Evaluation, Master of Health Systems\nManagement and Master of Science in Health Monitoring and Evaluation.\nThe Bachelor of Health Systems in Monitoring and Evaluation is the first\nundergraduate degree program in Tanzania. The Department of Health\nSystems has designed guidelines to help students during their field\npracticals. The aim is to bridge the gap between theoretical knowledge\nand practical application, foster professional development, and ensure\nethical and effective M&E practices.\n\nIt corresponds to the needs and opportunities in social, economic and\ntechnological development for the prosperity of individuals,\n\n------------------------------------------------------------------------\n\n# Page 6\n\nDepartment of Health Systems Management 2 B: Aims of the Field\nAttachment for BHSME - Student\n\nThe Mzumbe university under the students' bylaws of 2023 recognizes the\nimportance of field attachment to every undergraduate student.\n\nTherefore the primary goal of field attachment for BHSME students is to\nenable them to translate the theories into practice to be able to\nachieve intended better results that meet individual, organizational and\nlabor market demands from both local and international perspectives. The\ngoal is backed up with the following specific objectives: 1. To enable\nstudents to experience how health organizations/institutions and\nhealth-related ones capture monitoring and evaluation concepts in their\ndevelopmental interventions 2. To enable students to experience the\nstrengths and challenges of data management and data use in health\norganizations/institutions and health- related ones 3. To enable\nstudents, examine the levels of M&E capacity in health\norganizations/institutions and health-related ones 4. To enable students\nto understand the interlinkages and interconnectedness of policymakers\nand implementers on the M&E concepts and frameworks in the health sector\n5. To enable students to strengthen their skills and knowledge in M&E\nresearch-based 6. To enable students to analyze and determine their\ncompetence level and gaps in meeting labor market demands at both local\nand international levels 7. To enable students to develop networking\nwith the real world while transforming ideas into realities.\n\n------------------------------------------------------------------------\n\n# Page 7\n\nField Practice Guideline for Undergraduate Students 3 C: Duration of\nField Attachment\n\nThe field attachment for BHSME students will cover a total of seventeen\n(17) weeks of the third year's first semester. D: Specific Areas where\nStudents can be Attached for Field Practices 1. Hospitals and healthcare\nfacilities with a wider range of services and programs 2. Ministry and\ngovernment departments dealing with planning, implementation and\nevaluation of different development activities 3. Private/consulting\nfirms dealing with the design and implementation of research,\nproject/program, and M&E 4. Research and academic institutions with\nresearch and M&E programs 5. Community health organizations implementing\ndifferent health-related interventions and programs 6. Health insurance\ncompanies from both public and private 7. International development\norganizations implementing different programs within or outside the\ncountry 8. Global health organizations 9. Policy and advocacy\norganization 10. Non-governmental organizations (NGOs) implementing\nvarious projects and programs E: Competencies that Students should\nDevelop and Demonstrate\n\nThe student pursuing a Bachelor of Health Systems Management in\nMonitoring and Evaluation should demonstrate competency and participate\nto know how to effectively design, implement, and manage monitoring and\nevaluation activities, ensuring that projects/programs or organization\nachieve their intended outcomes and provide valuable insights for\ncontinuous improvement.\n\n------------------------------------------------------------------------\n\n# Page 8\n\nDepartment of Health Systems Management 4 F: Technical Competencies\nRelated to Monitoring and Evaluation 1.0 M&E Activities development and\norganization settings 1.1 Students should be able to understand and\ndevelop M&E activities 1.2 Students should be able to link the regular\norganizational plan and its M&E plan 1.3 Students should understand the\nbudgeting of M&E activities 1.4 Developing innovative approaches to\nimprove M&E processes and overcome challenges that exist in the\norganization 2.0 Data management and data use 2.1. Students should be\nable to develop a clear understanding of various sources of data; Hard\ndocuments eg (MTUHA Registers), surveys reports and soft wares such as\nDHIS2, CTC3 Database, PlanRep, FFARS, MUSE, GoTHOMIS etc ( the\norganization should not limit the student to only these tools instead\nall available sources). 2.2. Students should be able to or engaged in\ndesigning surveys, conducting interviews, focus groups, and using\nstatistical analysis tools. Also using other tools in data collection\nlike Kobo collect, Google Forms, e-dodoso etc. 2.3. Students should\ndevelop expertise in using databases and data management software to\norganize and retrieve data efficiently. 2.4. Students should be able to\nunderstand planning and budgeting tools (software) available in the\norganization not limited to; PlanRep. budgeting and expenditures\nmanagement tools (software)eg FFARS, MUSE, GoTHOMIS etc. 2.5. Students\nshould be acquainted with tools like SPSS, STATA, SAS, Excel or R or any\ndata analysis tools that are used by the host organization. 2.6.\nStudents be acquainted with the data use plan used by the host\norganization -practices and pieces of evidence.\n\n------------------------------------------------------------------------\n\n# Page 9\n\nField Practice Guideline for Undergraduate Students 5 2.7. Students\nshould be able to conduct the survey and use the findings for program\nimprovement. 2.8. Students should be able to understand how Surveillance\nis done and use the findings. 2.9. Students should be able to conduct\ndata auditing. 2.10. Students should understand how supervision and\ncapacity building is done. 2.11. Students should be able to identify\nvarious sources of knowledge within the organization (both Tacit and\nImplicit) and use information (findings) resulting from M&E for\norganizational learning. 2.12. Student should participate in leveraging\nnew technologies and tools to enhance data collection, analysis, and\nreporting. 2.13. Students should participate in ensuring that all data\nand analyses are accurate and reliable and carefully reviewing all\naspects of M&E processes to avoid errors and omissions. 3.0 M&E\nResearch: Evaluation Techniques 3.1. Students should develop and\npractice understanding different types of evaluations and when to use\nthem. (Formative Evaluation (i.e.,. Process Evaluation & Summative\nevaluation particularly Outcome and Impact Evaluation, Baseline Surveys,\nMidterm Evaluation, End line Evaluation and Ex-post Evaluation) 3.2.\nStudents should be able to differentiate the purposes of formative,\nprocess, and outcome evaluation and explain how findings from each are\nused. 3.3. Students should be able to assess evaluation reports in\nrelation to their quality, utility, and impact on public health 3.4.\nStudents are expected to acquire and fully utilize skills in assessing\nthe direct and indirect effects of a program or intervention or any\nactivities performed by the organization in reflection with prior-\nidentified indicators.\n\n------------------------------------------------------------------------\n\n# Page 10\n\nDepartment of Health Systems Management 6 4.0 M&E Research: Performance\nMonitoring 4.1. Students should participate in development and use SMART\n(Specific, Measurable, Achievable, Relevant, Time-bound) indicators.\n4.2. Students should develop and demonstrate Proficiency in frameworks\nlike Logical Framework Approach (LogFrame), Theory of Change (ToC), and\nResults-Based Management (RBM) /Result Framework or any other frameworks\navailable in the organization 4.3. Students should participate in the\ndevelopment of the Program/ Project Logic Model 4.4. Students should be\nable to develop project/program targets such as baseline targets,\ninterim targets and final targets 4.5. Students should be able to\nunderstand various program components including inputs, activities,\noutput, outcome and impacts 4.6. Students should be able to understand\nthe program theory and how to prepare the project/program Document 4.7.\nStudents should be able to apply various economic evaluation principles\nwhile designing and selecting an intervention such as Cost Benefit\nAnalysis (CBA), Cost Utility Analysis (CUA), Cost Effectiveness Analysis\n(CEA) and other principles. The host organization may not be limited to\nthe mentioned principles only 5.0 Networking and collaboration a.\\\nThe students is expected to develop negotiation skills and effective\ncommunication with project/ project stakeholders or members of the\norganization, including donors, beneficiaries, and team members. b.\\\nStudents should work collaboratively with project teams, including\ncontributing to team goals and supporting colleagues. Building strong\nrelationships and networks within and outside the organization. c.\\\nStudents should understand the flow of information and communication\nchannels at different levels within and outside the organization.\n\n------------------------------------------------------------------------\n\n# Page 11\n\nField Practice Guideline for Undergraduate Students 7 d.\\\nStudents are expected to know how the partnership works in monitoring\nand evaluation or the overall management of the project, program or\norganization. G: Roles of the Host Organization (Employer) 1. To orient\nstudents on various sections and units available in the organization\n(organization structure and its scope of operation) 2. To assign a\nstudent with the roles/activities/ tasks related to his/her profession\n3. To oversee student's progress and give constructive feedback to\nstudents for better improvement 4. To assist/coach student on assigned\nduties/activities 5. To ensure a student adheres to professional ethical\nconduct. 6. To sign and verify the student's logbook based on the\nactivities performed daily 7. Be able to respond to questions that will\nbe raised by the field supervisor from Mzumbe University during the\nassessment (field visit) 8. Allow the student to conduct his/her\nevaluation/research project after thoroughly reviewing the student's\nevaluation proposal H: Roles of Student (Prospective Employee) 1. To\nreport at the station on time. 2. To accomplish all assigned activities.\n3. To report any challenges observed upon fulfilling his/her duties and\nresponsibilities. 4. Be able to receive feedback from the host\nsupervisor and make sure he/she responds accordingly. 5. Be ready to\nlearn and cope with the organization's environment 6. Work in a team\n\n------------------------------------------------------------------------\n\n# Page 12\n\nDepartment of Health Systems Management 8 7. Adhere to the professional\nethical conduct of M&E 8. To prepare daily field reports (Logbook). 9.\nDaily attendance register (to sign in and out). 10. To be creative and\ninnovative in solving daily situational problems. I:\\\nRoles of the Department (Mzumbe University) 1. To facilitate linkage\nbetween the student and the host Organization 2. To make follow up on\nthe student's progress 3. To solve problems which may be encountered by\nstudents during field time. 4. To provide physical field assessment to\nboth prospective employees (field student) and host supervisor 5.\nAssigning a department/school member to oversee the student's fieldwork,\nprovide feedback and support 6. Evaluating student's performance during\nthe field placement and providing constructive feedback for improvement\n7. To help students in accessing field placement by providing them with\nfield attachment letter in time. Note: The end product should be a field\nreport with enough details as per field objectives and their\ncorresponding competencies. This work has to be given the weight in\nsemester exam.\n\n------------------------------------------------------------------------\n\n# Page 14\n\nMzumbe University, P.O Box 1 Mzumbe, Morogoro - Tanzania. Tel: +255 (0)\n23 2931220/1/2 Fax: +255 (0) 23 2931216 , Cell: +255 (0) 754694029\nEmail: cmu@mu.ac.tz\n"
+  }
+}
