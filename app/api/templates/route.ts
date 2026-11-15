@@ -3,10 +3,14 @@ import { randomUUID } from "crypto";
 import { supabase } from "../../../lib/supabase";
 import { extractText } from "../../../lib/extract";
 
+function mapTemplate(t: any) {
+  if (!t) return t;
+  return { id: t.id, name: t.name, category: t.category, reportType: t.report_type, fileName: t.file_name, filePath: t.file_path, extractedText: t.extracted_text, createdAt: t.created_at };
+}
 export async function GET() {
   const { data, error } = await supabase.from("templates").select("*").order("created_at", { ascending: false });
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  return NextResponse.json(data || []);
+  return NextResponse.json((data || []).map(mapTemplate));
 }
 
 export async function POST(req: NextRequest) {
