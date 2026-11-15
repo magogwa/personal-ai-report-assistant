@@ -31,6 +31,7 @@ function CreateInner() {
   const fileRef = useRef<HTMLInputElement>(null);
   const [saving, setSaving] = useState(false);
   const [savedId, setSavedId] = useState("");
+  const [suggesting, setSuggesting] = useState(false);
 
   useEffect(() => {
     fetch("/api/templates").then((r) => r.json()).then((t: Template[]) => {
@@ -136,7 +137,7 @@ function CreateInner() {
             </div>
           )}
           <textarea value={rawNotes} onChange={(e) => setRawNotes(e.target.value)} placeholder="Activities conducted" rows={6} className="border rounded px-3 py-2 w-full" />
-          <button type="button" onClick={async () => { const res = await fetch("/api/suggest-activities", { method: "POST" }); const d = await res.json(); if (d.result) setRawNotes(d.result); }} className="bg-indigo-600 text-white px-4 py-2 rounded">Suggest activities</button>
+          <button type="button" disabled={suggesting} onClick={async () => { setSuggesting(true); try { const res = await fetch("/api/suggest-activities", { method: "POST" }); const d = await res.json(); if (d.result) setRawNotes(d.result); } finally { setSuggesting(false); } }} className="bg-indigo-600 text-white px-4 py-2 rounded disabled:opacity-50">{suggesting ? "Suggesting…" : "Suggest activities"}</button>
           <textarea value={aiInstructions} onChange={(e) => setAiInstructions(e.target.value)} placeholder="Additional AI instructions" rows={3} className="border rounded px-3 py-2 w-full" />
           <div className="flex gap-2">
             <button onClick={() => setStep(2)} className="px-4 py-2 rounded border">Back</button>
