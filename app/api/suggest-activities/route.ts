@@ -1,13 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
-
-const dataFile = path.join(process.cwd(), "data", "db.json");
-function readDB() { try { if (!fs.existsSync(dataFile)) return { settings: {} }; return JSON.parse(fs.readFileSync(dataFile, "utf8")); } catch { return { settings: {} }; } }
+import { supabase } from "../../../lib/supabase";
 
 export async function POST(req: NextRequest) {
-  const db = readDB();
-  const guideline = db.settings?.guideline || "";
+  const { data: settingsRow } = await supabase.from("settings").select("guideline").eq("id", 1).single();
+  const guideline = settingsRow?.guideline || "";
   const apiKey = process.env.OPENROUTER_API_KEY;
   if (!apiKey) return NextResponse.json({ error: "OPENROUTER_API_KEY not set" }, { status: 500 });
   const prompt = `Based on the following guideline, suggest a concise list of activities conducted for a daily report. Return only up to 5 activities, one per line, no numbering or symbols.\n\nGuideline:\n${guideline}`;

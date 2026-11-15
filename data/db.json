@@ -13,9 +13,9 @@
       "aiInstructions": "copy as template says",
       "supportingDocs": [],
       "status": "completed",
-      "content": "Title: Untitled Report\n\nData Collection  \nGathered relevant information for the ongoing project through data collection activities.\n\nReport Presentation  \nPrepared and presented the findings to stakeholders, ensuring clarity and engagement.",
+      "content": "**Untitled Report**\n\n**Data Collection Activities**  \nI engaged in comprehensive data collection activities, which involved a systematic approach to gathering relevant information essential for the ongoing evaluation of the project. This process included identifying key data sources, designing data collection methodologies, and employing various techniques such as surveys, interviews, and observational studies. I collaborated with team members to ensure that the data collected was both accurate and representative of the project's objectives. Additionally, I maintained meticulous records of the data collection process to facilitate transparency and reproducibility in our findings.\n\n**Report Presentation**  \nI prepared and presented a detailed report summarizing the findings from the data collected, ensuring clarity and comprehensibility for stakeholders. The report included an introduction outlining the purpose of the evaluation, a methodology section detailing the data collection techniques used, and a results section that highlighted key insights and trends identified during the analysis. I utilized visual aids, such as charts and graphs, to enhance the presentation and make complex data more accessible. During the presentation, I encouraged feedback and questions from stakeholders to foster engagement and ensure that their perspectives were considered in the evaluation process.",
       "createdAt": "2026-11-13T10:20:50.941Z",
-      "updatedAt": "2026-11-13T14:43:05.595Z"
+      "updatedAt": "2026-11-15T10:41:30.416Z"
     },
     {
       "id": "8ea2a3d8-8dfd-4a92-a50c-786e3fa45f35",
@@ -183,6 +183,11 @@
     {
       "reportId": "bcaa74ba-0367-4bf4-9072-c83b0a7483ba",
       "createdAt": "2026-11-13T15:39:23.501Z",
+      "model": "openai/gpt-4o-mini"
+    },
+    {
+      "reportId": "b18e4d4f-fd40-4351-9cd0-5c28f6ab43d2",
+      "createdAt": "2026-11-15T10:10:40.239Z",
       "model": "openai/gpt-4o-mini"
     }
   ],

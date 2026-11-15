@@ -1,27 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
 import { randomUUID } from "crypto";
-
-const dataFile = path.join(process.cwd(), "data", "db.json");
-const uploadDir = path.join(process.cwd(), "data", "uploads");
-
-function readDB() {
-  try {
-    if (!fs.existsSync(dataFile)) return { reports: [], templates: [] };
-    return JSON.parse(fs.readFileSync(dataFile, "utf8"));
-  } catch {
-    return { reports: [], templates: [] };
-  }
-}
-function writeDB(db: any) {
-  fs.mkdirSync(path.dirname(dataFile), { recursive: true });
-  fs.writeFileSync(dataFile, JSON.stringify(db, null, 2));
-}
+import { supabase } from "../../../lib/supabase";
+import { extractText } from "../../../lib/extract";
 
 export async function GET() {
-  const db = readDB();
-  return NextResponse.json(db.templates || []);
+  const { data, error } = await supabase.from("templates").select("*").order("created_at", { ascending: false });
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  return NextResponse.json(data || []);
 }
 
 export async function POST(req: NextRequest) {
@@ -31,31 +16,31 @@ export async function POST(req: NextRequest) {
   const category = (form.get("category") as string) || "General";
   const reportType = (form.get("reportType") as string) || "General Report";
   if (!file) return NextResponse.json({ error: "No file" }, { status: 400 });
+  const ext = ("." + file.name.split(".").pop()).toLowerCase();
   const allowed = [".docx", ".pdf", ".txt"];
-  const ext = path.extname(file.name).toLowerCase();
   if (!allowed.includes(ext)) return NextResponse.json({ error: "Unsupported file type" }, { status: 400 });
   if (file.size > 10 * 1024 * 1024) return NextResponse.json({ error: "File too large (max 10MB)" }, { status: 400 });
 
-  fs.mkdirSync(uploadDir, { recursive: true });
   const id = randomUUID();
   const buf = Buffer.from(await file.arrayBuffer());
-  const filePath = path.join(uploadDir, `${id}-${file.name}`);
-  fs.writeFileSync(filePath, buf);
+  const storagePath = `${id}-${file.name}`;
+  const { error: upErr } = await supabase.storage.from("templates").upload(storagePath, buf, { contentType: file.type });
+  if (upErr) return NextResponse.json({ error: upErr.message }, { status: 500 });
 
-  const db = readDB();
-  const { extractText } = await import("../../../lib/extract");
-  const extracted = extractText(filePath, file.name);
-  const tmpl = { id, name, category, reportType, fileName: file.name, filePath, extractedText: extracted, createdAt: new Date().toISOString() };
-  db.templates = db.templates || [];
-  db.templates.push(tmpl);
-  writeDB(db);
-  return NextResponse.json(tmpl);
+  const { data: pub } = supabase.storage.from("templates").getPublicUrl(storagePath);
+  const filePath = pub.publicUrl;
+  const extracted = "";
+  const tmpl = { id, name, category, report_type: reportType, file_name: file.name, file_path: filePath, storage_path: storagePath, extracted_text: extracted, created_at: new Date().toISOString() };
+  const { data, error } = await supabase.from("templates").insert(tmpl).select().single();
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  return NextResponse.json(data);
 }
 
 export async function DELETE(req: NextRequest) {
   const id = new URL(req.url).searchParams.get("id");
-  const db = readDB();
-  db.templates = (db.templates || []).filter((t: any) => t.id !== id);
-  writeDB(db);
+  const { data: tmpl } = await supabase.from("templates").select("storage_path").eq("id", id).single();
+  if (tmpl?.storage_path) await supabase.storage.from("templates").remove([tmpl.storage_path]);
+  const { error } = await supabase.from("templates").delete().eq("id", id);
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
   return NextResponse.json({ ok: true });
 }

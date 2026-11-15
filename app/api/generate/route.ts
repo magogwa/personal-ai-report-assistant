@@ -1,27 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
-
-const dataFile = path.join(process.cwd(), "data", "db.json");
-function readDB() { try { if (!fs.existsSync(dataFile)) return { reports: [], templates: [] }; return JSON.parse(fs.readFileSync(dataFile, "utf8")); } catch { return { reports: [], templates: [] }; } }
-function writeDB(db: any) { fs.mkdirSync(path.dirname(dataFile), { recursive: true }); fs.writeFileSync(dataFile, JSON.stringify(db, null, 2)); }
+import { supabase } from "../../../lib/supabase";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const db = readDB();
-  const report = (db.reports || []).find((r: any) => r.id === body.reportId);
+  const { data: report } = await supabase.from("reports").select("*").eq("id", body.reportId).single();
   if (!report) return NextResponse.json({ error: "Report not found" }, { status: 404 });
 
-  const template = report.templateId ? (db.templates || []).find((t: any) => t.id === report.templateId) : null;
-  const templateRef = template?.extractedText ? `\n\nTemplate reference (follow this structure):\n${template.extractedText.slice(0, 4000)}` : "";
+  let template: any = null;
+  if (report.template_id) {
+    const { data } = await supabase.from("templates").select("*").eq("id", report.template_id).single();
+    template = data;
+  }
+  const templateRef = template?.extracted_text ? `\n\nTemplate reference (follow this structure):\n${template.extracted_text.slice(0, 4000)}` : "";
 
-  // Extract text from supporting documents
-  const settings = db.settings || {};
+  const { data: settingsRow } = await supabase.from("settings").select("*").eq("id", 1).single();
+  const settings = settingsRow || {};
   const globalGuideline = settings.guideline ? `\n\nGlobal guideline (follow these rules):\n${settings.guideline.slice(0, 4000)}` : "";
 
   const { extractText } = await import("../../../lib/extract");
   let docsText = "";
-  for (const d of (report.supportingDocs || [])) {
+  for (const d of (report.supporting_docs || [])) {
     try {
       const t = extractText(d.filePath, d.name);
       if (t) docsText += `\n--- ${d.name} ---\n${t.slice(0, 3000)}\n`;
@@ -32,20 +30,20 @@ export async function POST(req: NextRequest) {
   const apiKey = process.env.OPENROUTER_API_KEY;
   if (!apiKey) return NextResponse.json({ error: "OPENROUTER_API_KEY not set" }, { status: 500 });
 
-  const prompt = `You are a professional report writer. Generate a ${report.reportType} following this structure priority: ${template ? template.name : "default structure for " + report.reportType}. 
+  const prompt = `You are a professional report writer. Generate a ${report.report_type} following this structure priority: ${template ? template.name : "default structure for " + report.report_type}. 
 
 Report details:
 Title: ${report.title}
-Project/Programme: ${report.projectName}
-Reporting period: ${report.reportingPeriod}
+Project/Programme: ${report.project_name}
+Reporting period: ${report.reporting_period}
 Department/Location: ${report.department}
-Responsible officer: ${report.responsibleOfficer}
+Responsible officer: ${report.responsible_officer}
 
 Raw notes:
-${report.rawNotes}
+${report.raw_notes}
 
 Additional instructions:
-${report.aiInstructions}
+${report.ai_instructions}
 
 Rules:
 - Never fabricate data, statistics, activities, dates, or findings.
@@ -77,16 +75,8 @@ Additional formatting/output rules:
   const data = await res.json();
   const content = data?.choices?.[0]?.message?.content || data?.error?.message || "Generation failed.";
 
-  const idx = db.reports.findIndex((r: any) => r.id === report.id);
-  db.reports[idx].content = content;
-  db.reports[idx].status = "completed";
-  db.reports[idx].updatedAt = new Date().toISOString();
-  writeDB(db);
-
-  // record history
-  db.generationHistory = db.generationHistory || [];
-  db.generationHistory.push({ reportId: report.id, createdAt: new Date().toISOString(), model: process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini" });
-  writeDB(db);
+  await supabase.from("reports").update({ content, status: "completed", updated_at: new Date().toISOString() }).eq("id", report.id);
+  await supabase.from("generation_history").insert({ report_id: report.id, model: process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini" });
 
   return NextResponse.json({ content });
 }
